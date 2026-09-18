@@ -129,10 +129,10 @@ Signalling at carrier volume is a different job from running a switch, and putti
 - [ClueCon](https://www.cluecon.com/) - The FreeSWITCH developer conference. Past talks are the best long-form material on the internals.
 - [sip-resources](https://github.com/miconda/sip-resources) - Curated links on SIP, RTP and WebRTC from the Kamailio lead, which is the protocol background FreeSWITCH work assumes.
 
-## Footnotes
-
-This list is maintained by [ICT Innovations](https://www.ictinnovations.com), who also build some of the software on it. Entries we maintain are `ictpbx-community-edition`, `ictcore`, `ictfax`, `ictdialer`, `freeswitch-esl-node`, `pbx-mcp` and `ansible-role-ictpbx`. They are held to the same bar as everything else and can be challenged in an issue like any other entry.
-
 ## Contributing
 
 Contributions are welcome. Read the [contribution guidelines](contributing.md) first, and please open one pull request per entry.
+
+## Footnotes
+
+This list is maintained by [ICT Innovations](https://www.ictinnovations.com), who also build some of the software on it. Entries we maintain are `ictpbx-community-edition`, `ictcore`, `ictfax`, `ictdialer`, `freeswitch-esl-node`, `pbx-mcp` and `ansible-role-ictpbx`. They are held to the same bar as everything else and can be challenged in an issue like any other entry.
