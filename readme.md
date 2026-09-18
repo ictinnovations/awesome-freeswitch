@@ -2,7 +2,7 @@
 
 > Software defined telecom stack for voice, video and messaging applications.
 
-FreeSWITCH gives you a modular media engine with call control over a socket. What you put around it, the interface, the SIP edge, the monitoring, the speech engines, comes from the ecosystem. This list covers that ecosystem, plus the SIP and media components FreeSWITCH is normally deployed alongside.
+FreeSWITCH gives you a modular media engine with call control over a socket. What you put around it, the interface, the SIP edge, the monitoring, the speech engines, comes from everywhere else. This list covers that, plus the SIP and media components FreeSWITCH is normally deployed alongside.
 
 Every entry was checked against its own repository before being listed. Projects with no commits in the last year are left out, and come out when that becomes true, because a directory that lists dead software costs people more time than it saves.
 
@@ -42,7 +42,7 @@ Every entry was checked against its own repository before being listed. Projects
 Projects where FreeSWITCH is the media engine under something larger. Useful both as products and as worked examples of how to drive it at scale.
 
 - [jambonz](https://github.com/jambonz/jambonz-feature-server) - Open source CPaaS combining drachtio for SIP and FreeSWITCH for media, with a webhook and WebSocket API in the style of the commercial platforms.
-- [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) - Web conferencing for teaching, which uses FreeSWITCH for its audio mixing. The biggest single deployment base of FreeSWITCH conferencing.
+- [BigBlueButton](https://github.com/bigbluebutton/bigbluebutton) - Web conferencing for teaching. Its audio mixing runs on FreeSWITCH, which puts a copy in a lot of schools that have never heard of the project.
 - [ICTCore](https://github.com/ictinnovations/ictcore) - Communications framework exposing FreeSWITCH voice, fax and messaging as a REST API and programmable call flows.
 
 ## Containers and deployment
@@ -66,9 +66,9 @@ The Event Socket is how external code controls FreeSWITCH. The bindings that shi
 
 Getting live call audio into your own process is the starting point for transcription, agent assist and voice agents.
 
-- [mod_audio_stream](https://github.com/amigniter/mod_audio_stream) - Streams a channel's audio to a WebSocket and plays returned audio back, which is the usual bridge between FreeSWITCH and a speech service.
+- [mod_audio_stream](https://github.com/amigniter/mod_audio_stream) - Streams a channel's audio to a WebSocket and plays returned audio back. The usual bridge between FreeSWITCH and a speech service.
 - [Whisper](https://github.com/openai/whisper) - Speech recognition models that changed what is affordable in this space.
-- [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - The port that made Whisper practical on ordinary CPUs, which is what most people run next to a switch.
+- [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - The port that made Whisper practical on ordinary CPUs. Most people end up running it on the same box as the switch.
 - [Vosk](https://alphacephei.com/vosk/) - Lightweight offline speech recognition with streaming support and small models, well suited to telephony audio.
 - [Piper](https://github.com/OHF-Voice/piper1-gpl) - Fast local neural text to speech, light enough to run per channel.
 
@@ -86,7 +86,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 - [rtpengine](https://github.com/sipwise/rtpengine) - Kernel assisted RTP proxy and media relay, handling NAT traversal, recording and transcoding at volume.
 - [coturn](https://github.com/coturn/coturn) - The STUN and TURN server nearly every WebRTC deployment ends up running.
 - [libsrtp](https://github.com/cisco/libsrtp) - The SRTP implementation FreeSWITCH links against for encrypted media.
-- [bcg729](https://github.com/BelledonneCommunications/bcg729) - Open source G.729 codec, now patent free, which is what the community G.729 modules wrap.
+- [bcg729](https://github.com/BelledonneCommunications/bcg729) - Open source G.729 codec, now patent free. The community G.729 modules wrap it.
 
 ## Testing, monitoring and troubleshooting
 
@@ -107,7 +107,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 
 ## Contact centre, dialling and fax
 
-- [mod_callcenter](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Modules/mod_callcenter_1049389/) - The in-tree queue and agent module, which is further along than most people expect before they reach for something external.
+- [mod_callcenter](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Modules/mod_callcenter_1049389/) - The in-tree queue and agent module. Further along than most people expect before they go looking for something external.
 - [ICTDialer](https://github.com/ictinnovations/ictdialer) - Voice broadcasting and auto dialler over FreeSWITCH, with SMS and fax campaigns on the same contact lists.
 - [ICTFax](https://github.com/ictinnovations/ictfax) - Fax server over FreeSWITCH and mod_spandsp, with T.38, a web interface and a REST API.
 
@@ -127,7 +127,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 ## Learning
 
 - [ClueCon](https://www.cluecon.com/) - The FreeSWITCH developer conference. Past talks are the best long-form material on the internals.
-- [sip-resources](https://github.com/miconda/sip-resources) - Curated links on SIP, RTP and WebRTC from the Kamailio lead, which is the protocol background FreeSWITCH work assumes.
+- [sip-resources](https://github.com/miconda/sip-resources) - Curated links on SIP, RTP and WebRTC from the Kamailio lead. The protocol background FreeSWITCH work assumes you already have.
 
 ## Contributing
 
