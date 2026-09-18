@@ -1,6 +1,6 @@
 # Awesome FreeSWITCH [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Open source tools, libraries and resources for building on [FreeSWITCH](https://freeswitch.org), the softswitch behind a large share of the world's hosted PBXs, conferencing systems and programmable voice platforms.
+> Software defined telecom stack for voice, video and messaging applications.
 
 FreeSWITCH gives you a modular media engine with call control over a socket. What you put around it, the interface, the SIP edge, the monitoring, the speech engines, comes from the ecosystem. This list covers that ecosystem, plus the SIP and media components FreeSWITCH is normally deployed alongside.
 
@@ -22,7 +22,6 @@ Every entry was checked against its own repository before being listed. Projects
 - [Billing](#billing)
 - [WebRTC and endpoints](#webrtc-and-endpoints)
 - [Learning](#learning)
-- [Disclosure](#disclosure)
 
 ## Official
 
@@ -130,7 +129,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 - [ClueCon](https://www.cluecon.com/) - The FreeSWITCH developer conference. Past talks are the best long-form material on the internals.
 - [sip-resources](https://github.com/miconda/sip-resources) - Curated links on SIP, RTP and WebRTC from the Kamailio lead, which is the protocol background FreeSWITCH work assumes.
 
-## Disclosure
+## Footnotes
 
 This list is maintained by [ICT Innovations](https://www.ictinnovations.com), who also build some of the software on it. Entries we maintain are `ictpbx-community-edition`, `ictcore`, `ictfax`, `ictdialer`, `freeswitch-esl-node`, `pbx-mcp` and `ansible-role-ictpbx`. They are held to the same bar as everything else and can be challenged in an issue like any other entry.
 
