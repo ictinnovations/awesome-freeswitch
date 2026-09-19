@@ -35,6 +35,7 @@ Every entry was checked against its own repository before being listed. Projects
 ## Distributions and web interfaces
 
 - [FusionPBX](https://github.com/fusionpbx/fusionpbx) - The multi-tenant web interface most people run on top of FreeSWITCH: domains, extensions, IVR, queues, call recordings and a dialplan editor. MPL-1.1, stated in the file headers rather than a LICENSE file.
+- [FS PBX](https://github.com/nemerald-voip/fspbx) - Started as a FusionPBX fork and has since had its backend rebuilt in Laravel with a Vue front end, while still carrying over the FusionPBX features it has not replaced yet. Apache-2.0, with two paid modules sold alongside it.
 - [ICTPBX Community Edition](https://github.com/ictinnovations/ictpbx-community-edition) - Multi-tenant PBX packaging FreeSWITCH and FusionPBX with a REST API and an Angular front end, for people who want to build on the PBX rather than only administer it.
 
 ## Platforms built on FreeSWITCH
