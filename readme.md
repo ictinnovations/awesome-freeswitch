@@ -123,6 +123,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 - [Verto](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Modules/mod_verto_3964934/) - FreeSWITCH's own WebRTC signalling module and JavaScript client, which skips SIP entirely between browser and switch.
 - [JsSIP](https://github.com/versatica/JsSIP) - JavaScript SIP over WebSocket library for building browser phones against mod_sofia.
 - [SIP.js](https://github.com/onsip/SIP.js) - The other widely used JavaScript SIP library, with a simpler API for common cases.
+- [Web SIP Phone](https://github.com/rasonyang/web-sip-phone) - Chrome MV3 extension that holds one SIP-over-WebSocket registration in an offscreen document, so the call and its audio survive page reloads and tab navigation that would kill an in-page JsSIP or Verto client. It has no dialpad by design: FreeSWITCH answers, holds and resumes the browser leg through `Call-Info: answer-after` and `uuid_phone_event`, leaving call control to the web app it sits behind.
 - [Linphone](https://github.com/BelledonneCommunications/linphone-desktop) - SIP client across desktop and mobile with encrypted voice and video, and a library you can embed.
 - [baresip](https://github.com/baresip/baresip) - Modular SIP user agent, useful both as a scriptable endpoint and as a base for custom clients.
 - [Telephone](https://github.com/64characters/Telephone) - Native macOS SIP client, still actively developed, which is rarer on that platform than it should be.
