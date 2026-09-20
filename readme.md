@@ -111,6 +111,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 ## Contact centre, dialling and fax
 
 - [mod_callcenter](https://developer.signalwire.com/freeswitch/FreeSWITCH-Explained/Modules/mod_callcenter_1049389/) - The in-tree queue and agent module. Further along than most people expect before they go looking for something external.
+- [AI Native Call Center](https://github.com/rasonyang/ai-native-callcenter) - Contact centre where a speech-to-speech model answers first and transfers the caller into mod_callcenter queues, the bot-phase transcript carrying onto the agent's screen. One Go binary plus PostgreSQL, on a FreeSWITCH build with mod_callcenter, mod_lua and mod_pgsql, with OpenAI Realtime, Gemini, Qwen or Doubao behind one provider setting.
 - [ICTDialer](https://github.com/ictinnovations/ictdialer) - Voice broadcasting and auto dialler over FreeSWITCH, with SMS and fax campaigns on the same contact lists.
 - [ICTFax](https://github.com/ictinnovations/ictfax) - Fax server over FreeSWITCH and mod_spandsp, with T.38, a web interface and a REST API.
 
