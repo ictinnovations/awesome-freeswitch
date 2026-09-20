@@ -131,6 +131,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 
 - [ClueCon](https://www.cluecon.com/) - The FreeSWITCH developer conference. Past talks are the best long-form material on the internals.
 - [sip-resources](https://github.com/miconda/sip-resources) - Curated links on SIP, RTP and WebRTC from the Kamailio lead. The protocol background FreeSWITCH work assumes you already have.
+- [Awesome RTC](https://github.com/rtckit/awesome-rtc) - The broad real time communications list: WebRTC, STUN and TURN, media servers and SIP libraries across a dozen languages. Wider than this list and shallower on FreeSWITCH, so the two sit side by side rather than overlapping much.
 
 ## Contributing
 
