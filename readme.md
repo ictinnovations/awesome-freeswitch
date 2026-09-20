@@ -69,6 +69,7 @@ The Event Socket is how external code controls FreeSWITCH. The bindings that shi
 Getting live call audio into your own process is the starting point for transcription, agent assist and voice agents.
 
 - [mod_audio_stream](https://github.com/amigniter/mod_audio_stream) - Streams a channel's audio to a WebSocket and plays returned audio back. The usual bridge between FreeSWITCH and a speech service.
+- [Cascade Realtime Gateway](https://github.com/rasonyang/cascade-realtime-gateway) - Serves the OpenAI Realtime GA WebSocket protocol, server-side VAD with barge-in and function calling included, and runs a cascaded ASR, LLM and TTS pipeline behind it, so a bridge written against the Realtime API can mix Deepgram, OpenAI and Qwen instead of being tied to one speech-to-speech vendor. Audio is 24 kHz PCM only, so the FreeSWITCH side has to resample.
 - [Whisper](https://github.com/openai/whisper) - Speech recognition models that changed what is affordable in this space.
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - The port that made Whisper practical on ordinary CPUs. Most people end up running it on the same box as the switch.
 - [Vosk](https://alphacephei.com/vosk/) - Lightweight offline speech recognition with streaming support and small models, well suited to telephony audio.
