@@ -81,6 +81,7 @@ Signalling at carrier volume is a different job from running a switch, and putti
 - [OpenSIPS](https://github.com/OpenSIPS/opensips) - The other branch of the same lineage, strong on session border control and provider-side routing.
 - [drachtio-server](https://github.com/drachtio/drachtio-server) - SIP server controlled from Node.js, and the signalling half of jambonz.
 - [Routr](https://github.com/fonoster/routr) - Newer SIP server built around a declarative configuration and an API.
+- [FreeSBC](https://github.com/rasonyang/freesbc) - Single Go binary that fronts FreeSWITCH as a SIP proxy over UDP, WS and WSS and relays the RTP itself, with SDES-SRTP on the carrier side and ICE-Lite plus DTLS-SRTP for browser legs, so there is no separate media proxy to run. Configured from one YAML file rather than a routing script, and it relays REGISTER and its digest challenge upstream instead of acting as a registrar, which is where it parts company with Kamailio.
 
 ## Media and RTP
 
