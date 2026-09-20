@@ -4,7 +4,7 @@
 
 FreeSWITCH gives you a modular media engine with call control over a socket. What you put around it, the interface, the SIP edge, the monitoring, the speech engines, comes from everywhere else. This list covers that, plus the SIP and media components FreeSWITCH is normally deployed alongside.
 
-Every entry was checked against its own repository before being listed. Projects with no commits in the last year are left out, and come out when that becomes true, because a directory that lists dead software costs people more time than it saves.
+Every entry was checked against its own repository before being listed. Projects with no commits in the last year are left out, and come out when that becomes true, because a directory that lists dead software costs people more time than it saves. The exception is a module inside the FreeSWITCH project's own organisation, where a quiet year usually means finished rather than abandoned. Those are listed with the date of their last commit so you can judge for yourself.
 
 ## Contents
 
@@ -62,6 +62,7 @@ The Event Socket is how external code controls FreeSWITCH. The bindings that shi
 - [eslgo](https://github.com/percipia/eslgo) - Go library covering inbound and outbound socket modes with typed events.
 - [freeswitch-esl-node](https://github.com/ictinnovations/freeswitch-esl-node) - Dependency-free typed client for Node.js.
 - [freeswitch-esl](https://github.com/ZmoleCristian/freeswitch-esl) - Async client for Rust.
+- [mod_mosquitto](https://github.com/freeswitch/mod_mosquitto) - Publishes and subscribes FreeSWITCH events over MQTT, and can run bgapi or originate from a message. Worth knowing if the rest of your estate already speaks MQTT. In the FreeSWITCH organisation, MPL-1.1, last commit August 2025.
 
 ## Streaming call audio and voice AI
 
@@ -72,6 +73,7 @@ Getting live call audio into your own process is the starting point for transcri
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - The port that made Whisper practical on ordinary CPUs. Most people end up running it on the same box as the switch.
 - [Vosk](https://alphacephei.com/vosk/) - Lightweight offline speech recognition with streaming support and small models, well suited to telephony audio.
 - [Piper](https://github.com/OHF-Voice/piper1-gpl) - Fast local neural text to speech, light enough to run per channel.
+- [mod_unimrcp](https://github.com/freeswitch/mod_unimrcp) - Speaks MRCP, which is how most enterprise ASR and TTS engines expect to be addressed. In the FreeSWITCH organisation, MPL-1.1 stated in the LICENSE file rather than detected by GitHub. Last commit September 2025.
 
 ## SIP proxies and session border control
 
