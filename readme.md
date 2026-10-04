@@ -69,6 +69,7 @@ The Event Socket is how external code controls FreeSWITCH. The bindings that shi
 Getting live call audio into your own process is the starting point for transcription, agent assist and voice agents.
 
 - [mod_audio_stream](https://github.com/amigniter/mod_audio_stream) - Streams a channel's audio to a WebSocket and plays returned audio back. The usual bridge between FreeSWITCH and a speech service.
+- [SIP-to-AI](https://github.com/rasonyang/sip-to-ai) - Pure Python asyncio SIP and RTP endpoint that FreeSWITCH dials like any other gateway, bridging G.711 call audio to a realtime speech-to-speech model: OpenAI Realtime, Deepgram Voice Agent, Gemini Live or Grok Voice. It sits beside the switch rather than inside it, so there is no module to build and no C dependencies, which is the difference from mod_audio_stream. Apache-2.0.
 - [Whisper](https://github.com/openai/whisper) - Speech recognition models that changed what is affordable in this space.
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp) - The port that made Whisper practical on ordinary CPUs. Most people end up running it on the same box as the switch.
 - [Vosk](https://alphacephei.com/vosk/) - Lightweight offline speech recognition with streaming support and small models, well suited to telephony audio.
