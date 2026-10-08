@@ -62,6 +62,7 @@ The Event Socket is how external code controls FreeSWITCH. The bindings that shi
 - [eslgo](https://github.com/percipia/eslgo) - Go library covering inbound and outbound socket modes with typed events.
 - [freeswitch-esl-node](https://github.com/ictinnovations/freeswitch-esl-node) - Dependency-free typed client for Node.js.
 - [freeswitch-esl](https://github.com/ZmoleCristian/freeswitch-esl) - Async client for Rust.
+- [freeswitch-esl-tokio](https://github.com/voip-rs/freeswitch-esl-tokio) - Async Rust client on Tokio with typed events and endpoints, and event and hangup-cause enums checked against FreeSWITCH's own C source.
 - [mod_mosquitto](https://github.com/freeswitch/mod_mosquitto) - Publishes and subscribes FreeSWITCH events over MQTT, and can run bgapi or originate from a message. Worth knowing if the rest of your estate already speaks MQTT. In the FreeSWITCH organisation, MPL-1.1, last commit August 2025.
 
 ## Streaming call audio and voice AI
